@@ -13,6 +13,12 @@ import java.util.Properties;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.lang3.StringUtils;
 
+/**
+ * 邮件处理类
+ *
+ * @author chenshuaijun
+ * @since 2016年04月22日
+ */
 public class Email {
     /**
      * 发送邮件的服务器的IP和端口
