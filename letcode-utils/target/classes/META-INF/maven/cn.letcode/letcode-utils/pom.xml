@@ -10,7 +10,7 @@
 
 	<artifactId>letcode-utils</artifactId>
 	<version>1.0.1</version>
-	<url>https://github.com/chenshuaijun/letcode-api</url>
+	<url>https://github.com/chenshuaijun/letcode</url>
 	<dependencies>
 		<dependency>
 			<groupId>org.jetbrains</groupId>
@@ -23,17 +23,17 @@
 			<version>RELEASE</version>
 		</dependency>
 	</dependencies>
-	<name>letcode-api</name>
+	<name>letcode</name>
 	<description>java 代码 API工具类</description>
 
 	<issueManagement>
 		<system>Github Issue</system>
-		<url>https://github.com/chenshuaijun/letcode-api/issues</url>
+		<url>https://github.com/chenshuaijun/letcode/issues</url>
 	</issueManagement>
 	<scm>
-		<connection>scm:git@github.com:chenshuaijun/letcode-api.git</connection>
-		<developerConnection>scm:git@github.com:chenshuaijun/letcode-api.git</developerConnection>
-		<url>git@github.com:chenshuaijun/letcode-api.git</url>
+		<connection>scm:git@github.com:chenshuaijun/letcode.git</connection>
+		<developerConnection>scm:git@github.com:chenshuaijun/letcode.git</developerConnection>
+		<url>git@github.com:chenshuaijun/letcode.git</url>
 	</scm>
 
 	<organization>
