@@ -9,8 +9,8 @@ import javax.mail.PasswordAuthentication;
  *
  */
 public class MyAuthenticator extends Authenticator {
-	String	userName	= null;
-	String	password	= null;
+	String userName = null;
+	String password = null;
 
 	public MyAuthenticator() {
 	}
