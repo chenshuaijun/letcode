@@ -9,13 +9,25 @@ import org.springframework.data.redis.core.ValueOperations;
  *
  * @author chenshuaijun
  */
-public class RedisCluserServiceImp {
+public class RedisServiceImp {
 	protected int					defaultLength		= 6;
 	protected Long					defaultIncreaseNo	= 1L;
 	/**
 	 * Redis 链接对象
 	 */
 	protected RedisTemplate<?, ?>	redisTemplate;
+
+	public RedisServiceImp() {
+	}
+
+	/**
+	 * 构造函数，定义redis链接模板
+	 * 
+	 * @param redisTemplate
+	 */
+	public RedisServiceImp(RedisTemplate<?, ?> redisTemplate) {
+		this.redisTemplate = redisTemplate;
+	}
 
 	/**
 	 * 根据定义的序列的名字 获取序列号，定一个序列长度，返回一个固定的长度值 <br>

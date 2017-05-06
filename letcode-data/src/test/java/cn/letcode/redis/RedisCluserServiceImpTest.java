@@ -18,11 +18,11 @@ public class RedisCluserServiceImpTest {
 	@Autowired
 	public RedisTemplate<?, ?>		redisTemplate;
 
-	private RedisCluserServiceImp	redisCluserServiceImp;
+	private RedisServiceImp	redisCluserServiceImp;
 
 	@Before
 	public void before() {
-		redisCluserServiceImp = new RedisCluserServiceImp();
+		redisCluserServiceImp = new RedisServiceImp();
 		redisCluserServiceImp.setRedisTemplate(redisTemplate);
 	}
 
