@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="letcode-wechat:war">
-    <output-path>$PROJECT_DIR$/letcode-wechat/target</output-path>
-    <root id="archive" name="letcode-wechat.war">
-      <element id="artifact" artifact-name="letcode-wechat:war exploded" />
-    </root>
-  </artifact>
-</component>
