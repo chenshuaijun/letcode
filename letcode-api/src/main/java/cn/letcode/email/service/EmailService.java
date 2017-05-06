@@ -257,7 +257,7 @@ public class EmailService {
 			msg = new MimeMessage(mSession);
 			from = new InternetAddress(
 					MimeUtility.encodeText(mail.getFromUserName()) + '<' + mail.getFromAddress() + ">");
-			to = new InternetAddress().parse(getToAddress(mail.getToAddress()));
+			to = InternetAddress.parse(getToAddress(mail.getToAddress()));
 			msg.setFrom(from);
 			msg.setRecipients(Message.RecipientType.TO, to);
 			msg.setSubject(mail.getSubject());
