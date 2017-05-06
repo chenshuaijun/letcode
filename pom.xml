@@ -7,10 +7,21 @@
     <groupId>cn.letcode</groupId>
     <artifactId>letcode</artifactId>
     <packaging>pom</packaging>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
+    <properties>
+        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+        <!--引入必须的包的版本信息-->
+        <junit-version>4.12</junit-version>
+    </properties>
+
     <modules>
         <module>letcode-api</module>
+        <module>letcode-utils</module>
+        <module>letcode-data</module>
     </modules>
+
+
 
     <url>https://github.com/chenshuaijun/letcode-api</url>
     <dependencies>
@@ -27,7 +38,8 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <version>${junit-version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.commons</groupId>
@@ -67,9 +79,10 @@
             <artifactId>dom4j</artifactId>
             <version>1.6.1</version>
         </dependency>
+
     </dependencies>
-    <name>API工具类</name>
-    <description>java 代码 API工具类</description>
+    <name>letcode</name>
+    <description>公共引入包</description>
 
     <issueManagement>
         <system>Github Issue</system>
@@ -101,10 +114,8 @@
         </developer>
     </developers>
 
-    <properties>
-        <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-        <project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-    </properties>
+
+
     <build>
         <plugins>
             <!-- 设置编译级别 -->

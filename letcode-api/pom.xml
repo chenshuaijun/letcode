@@ -23,7 +23,7 @@
             <version>RELEASE</version>
         </dependency>
     </dependencies>
-    <name>API工具类</name>
+    <name>letcode-api</name>
     <description>java 代码 API工具类</description>
 
     <issueManagement>
