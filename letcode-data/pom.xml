@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <parent>
-        <artifactId>letcode</artifactId>
-        <groupId>cn.letcode</groupId>
-        <version>1.0.0</version>
-    </parent>
-    <modelVersion>4.0.0</modelVersion>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<parent>
+		<artifactId>letcode</artifactId>
+		<groupId>cn.letcode</groupId>
+		<version>1.0.2</version>
+	</parent>
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>letcode-data</artifactId>
+	<version>1.0.1</version>
 
-    <artifactId>letcode-data</artifactId>
-    <version>1.0.1</version>
+	<properties>
+		<spring-data.version>1.8.3.RELEASE</spring-data.version>
+		<jedis>2.9.0</jedis>
+	</properties>
 
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.data</groupId>
-            <artifactId>spring-data-redis</artifactId>
-            <version>1.8.3.RELEASE</version>
-        </dependency>
-
-    </dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.data</groupId>
+			<artifactId>spring-data-redis</artifactId>
+			<version>${spring-data.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
+			<version>${jedis}</version>
+		</dependency>
+	</dependencies>
 </project>
