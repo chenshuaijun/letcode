@@ -9,6 +9,11 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>letcode-api</artifactId>
 	<version>1.2.0</version>
+	<properties>
+		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
+		<servlet.version>3.1.0</servlet.version>
+	</properties>
 	<url>https://github.com/chenshuaijun/letcode-api</url>
 	<dependencies>
 		<dependency>
@@ -20,6 +25,11 @@
 			<groupId>org.jetbrains</groupId>
 			<artifactId>annotations-java5</artifactId>
 			<version>RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>${servlet.version}</version>
 		</dependency>
 	</dependencies>
 	<name>letcode-api</name>
@@ -55,10 +65,7 @@
 		</developer>
 	</developers>
 
-	<properties>
-		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
-		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
-	</properties>
+
 	<build>
 		<plugins>
 			<!-- 设置编译级别 -->
