@@ -59,6 +59,21 @@ public class RedisServiceImp {
 		return getRedisSquence(squName, defaultLength);
 	}
 
+	/**
+	 * 保持字符串类型的数据到redis
+	 * 
+	 * @param key
+	 *            关键字key
+	 * @param value
+	 *            存入值
+	 * @param offset
+	 */
+	public void saveStrValue(String key, String value, long offset) {
+		@SuppressWarnings("unchecked")
+		ValueOperations<String, String> vo = (ValueOperations<String, String>) redisTemplate.opsForValue();
+		vo.set(key, value, offset);
+	}
+
 	public RedisTemplate<?, ?> getRedisTemplate() {
 		return redisTemplate;
 	}
