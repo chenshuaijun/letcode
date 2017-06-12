@@ -21,12 +21,13 @@ package cn.letcode.wechat.servlet;
 /**
  * 消息类型
  * 
- * @author qsyang<yangqisheng274@163.com>
+ * @author chenshuaijun
  */
 public enum MsgType {
 
 	Text("text"), Image("image"), Music("music"), Video("video"), Voice("voice"), Location("location"), Link("link");
-	private String msgType = "";
+
+	private String msgType;
 
 	MsgType(String msgType) {
 		this.msgType = msgType;
