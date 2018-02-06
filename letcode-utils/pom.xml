@@ -4,12 +4,11 @@
 	<parent>
 		<artifactId>letcode</artifactId>
 		<groupId>cn.letcode</groupId>
-		<version>1.0.3</version>
+		<version>1.0.4</version>
 	</parent>
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>letcode-utils</artifactId>
-	<version>1.0.3</version>
 	<url>https://github.com/chenshuaijun/letcode</url>
 	<dependencies>
 		<dependency>
@@ -22,6 +21,38 @@
 			<artifactId>annotations-java5</artifactId>
 			<version>RELEASE</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.thoughtworks.xstream</groupId>
+			<artifactId>xstream</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>dom4j</groupId>
+			<artifactId>dom4j</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+
 	</dependencies>
 	<name>letcode-utils</name>
 	<description>java 代码 API工具类</description>
@@ -51,7 +82,7 @@
 
 	<developers>
 		<developer>
-			<name>chensj</name>
+			<name>chenshuaijun</name>
 			<email>chensj@letcode.cn</email>
 		</developer>
 	</developers>
@@ -60,6 +91,7 @@
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
 	</properties>
+
 	<build>
 		<plugins>
 			<!-- 设置编译级别 -->
