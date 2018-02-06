@@ -6,7 +6,7 @@
 	<groupId>cn.letcode</groupId>
 	<artifactId>letcode</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.2</version>
+	<version>1.0.3</version>
 	<properties>
 		<project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>utf-8</project.reporting.outputEncoding>
@@ -16,15 +16,12 @@
 	</properties>
 
 	<modules>
-		<module>letcode</module>
 		<module>letcode-utils</module>
-		<module>letcode-data</module>
+		<!--<module>letcode-data</module>-->
 	</modules>
 
 	<url>https://github.com/chenshuaijun/letcode</url>
 
-	<dependencies>
-	</dependencies>
 
 	<dependencyManagement>
 		<dependencies>
